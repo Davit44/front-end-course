@@ -1,0 +1,6 @@
+.oddeven li:nth-of-type(2n) {
+    color: red;
+}
+.oddeven li:nth-of-type(2n+1) {
+    color: green;
+}

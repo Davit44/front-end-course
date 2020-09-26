@@ -1,0 +1,24 @@
+.position {
+  font-style: italic;
+  font-size: 16px;
+}
+.DM {
+  color: #fcf6f5;
+  font-size: 22px;
+  background-color: #89abe3;
+}
+.EP {
+  color: #89abe3;
+}
+.ED {
+  color: #89abe3;
+}
+.SK {
+  color: #89abe3;
+}
+body {
+  background-color: #f0fafc;
+}
+.center {
+  text-align: center;
+}
