@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homework.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h1>CONTACT US</h1>
+
+      <label>
+        <input type="radio" name="choice"/>
+        <span>Say Hi</span>
+      </label>
+      <label>
+        <input type="radio" name="choice"/> 
+        <span>Get a Quote</span>
+      </label>
+      <br />
+
+      <input type="text" name="Name" placeholder="Your Name" id="name" required/>
+
+      <br />
+
+      <input type="email" name="email" placeholder="Your Email" id="name" required/>
+
+      <br />
+
+      <select name="Service">
+        <option selected disabled hidden>Needed Services</option>
+        <option value="Service 1">Service 1</option>
+        <option value="Service 2">Service 2</option>
+      </select>
+      <select name="Budget">
+        <option selected disabled hidden>Budget</option>
+        <option value="budget 1">Budget 1</option>
+        <option value="budget 2">Budget 2</option>
+      </select>
+      <label for="textarea">Your Message</label>
+        <br />
+        <textarea id="textarea"></textarea>
+      
+      <br/>
+      <button type="submit"> Submit </button>
+    </form>
+</body>
+</html>
