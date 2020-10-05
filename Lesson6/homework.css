@@ -1,58 +1,56 @@
 body {
   background: url(adb706d55584afe743fb462650503b60.jpg);
-  background-size: 100%;
+  background-size: cover;
 }
+
 h1 {
   text-align: center;
   font-size: xx-large;
-  display: block;
 }
+
 form {
   background-color: yellowgreen;
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-top: 10%;
+  margin: 10% 35% 0 35%;
+  padding: 10px 30px;
   color: white;
   border-radius: 10px;
 }
-input {
-  margin: 0 10% 0 10%;
+
+input,
+select,
+textarea {
+  background-color: yellowgreen;
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  color: white;
 }
-#name {
-  width: 80%;
+
+input:not([type="radio"]),
+select {
+  width: 100%;
+  margin-top: 40px;
+  padding: 7px 0;
 }
+
 input::placeholder {
   color: white;
 }
-form input:focus {
-  border-width: 0 0 2px;
-  color: white;
-}
-form select {
-  display: block;
+
+input:focus,
+select:focus,
+textarea:focus {
   outline: none;
-  margin: 0 10% 0 10%;
-  width: 80%;
-  
+  color: white;
+  border-bottom-width: 2px;
 }
-form textarea {
-  margin: 0 10% 0 10%;
-  width: 80%;
+
+textarea {
   height: 60px;
+  width: 100%;
 }
-input,
-form select,
-form textarea {
-  background-color: yellowgreen;
-  border-width: 0 0 1px;
-  border-color: white;
-  color: white;
-  outline: none;
-}
-form input,
-form select {
-  margin-top: 10%;
-}
+
 button {
   background-color: white;
   color: black;
@@ -65,7 +63,15 @@ button {
   border: none;
 }
 
-form label:last-of-type {
-  margin-left: 10%;
-  /* margin-top: 10%; */
+.radio-label {
+  display: inline-block;
+}
+
+.radio-label input {
+  display: inline-block;
+}
+
+.tArea {
+  padding-top: 40px;
+  display: block;
 }

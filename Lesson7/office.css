@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+}
+.myDiv {
+  width: 300px;
+  height: 200px;
+  background-color: blue;
+  border: 5px solid red;
+  padding: 10px;
+}
+.myDiv div {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+}
+
+main {
+  height: 1000px;
+}
+
+#footer {
+  height: 200px;
+  background-color: black;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid red;
+    outline: none;
+}
+input[type="text"]:focus,
+input[type="text"]:hover {
+    border: none;
+    border-bottom: 4px solid green;
+    outline: none;
+}

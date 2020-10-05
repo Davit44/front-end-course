@@ -10,23 +10,18 @@
     <form>
       <h1>CONTACT US</h1>
 
-      <label>
-        <input type="radio" name="choice"/>
+      <label class="radio-label">
         <span>Say Hi</span>
+        <input type="radio" name="choice" checked />
       </label>
-      <label>
-        <input type="radio" name="choice"/> 
+      <label class="radio-label">
         <span>Get a Quote</span>
+        <input type="radio" name="choice" />
       </label>
-      <br />
 
-      <input type="text" name="Name" placeholder="Your Name" id="name" required/>
+      <input type="text" name="Name" placeholder="Your Name" required />
 
-      <br />
-
-      <input type="email" name="email" placeholder="Your Email" id="name" required/>
-
-      <br />
+      <input type="email" name="email" placeholder="Your Email" required />
 
       <select name="Service">
         <option selected disabled hidden>Needed Services</option>
@@ -38,12 +33,11 @@
         <option value="budget 1">Budget 1</option>
         <option value="budget 2">Budget 2</option>
       </select>
-      <label for="textarea">Your Message</label>
-        <br />
-        <textarea id="textarea"></textarea>
-      
-      <br/>
-      <button type="submit"> Submit </button>
+
+      <label class="tArea" for="textarea">Your Message</label>
+      <textarea id="textarea"></textarea>
+
+      <button type="submit">Submit</button>
     </form>
-</body>
+  </body>
 </html>
