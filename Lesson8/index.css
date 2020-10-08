@@ -1,0 +1,94 @@
+.item {
+    width: 50px;
+    min-height: 50px;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ​
+  .item:nth-of-type(1) {
+    order: 2;
+  }
+  ​
+  .item:nth-of-type(3) {
+    align-self: stretch;
+    order: -1;
+  }
+  ​
+  .item:nth-of-type(4) {
+    align-self: flex-start;
+  }
+  ​
+  .container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+  }
+  ​
+  /* .container > *:not(:last-child) {
+    margin-bottom: 5px;
+  } */
+  ​
+  /* arajin makardaki divery */
+  body > div {
+  }
+  ​
+  /* nerqevi kpac divy */
+  /* .container + div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+  } */
+  ​
+  /* nerqevi bolor ira makardaki p-ery */
+  .myDiv ~ p {
+    color: red;
+  }
+  ​
+  .item1 {
+    min-width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-size: 25px;  ​
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ​
+  .container1 {
+    width: 100px;
+    height: 400px;
+    border: 1px solid black;  ​
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  ​
+  .item-wrap {
+    min-width: 200px;
+    height: 50px;
+    background-color: red;
+  ​
+    color: white;
+    font-size: 25px;
+  ​
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ​
+  .container-wrap {
+      display: flex;
+      
+      flex-direction: row;
+      flex-wrap: wrap;
+  ​
+      flex-flow: row wrap;
+  }
