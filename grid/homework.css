@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+} 
+
+.container{
+   background-color: cornflowerblue;
+    height: fit-content;
+    width: fit-content;
+    
+    display: grid;
+    grid-gap: 5px;
+    padding: 40px 45px;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr, 1fr; */
+}
+
+.user1,
+.user2 {
+    height: fit-content;
+    width: fit-content;
+    background-color: whitesmoke;
+    padding: 15px;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "photo input1"
+    "photo input2";
+}
+
+.photo {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: lightgray;
+    grid-area: photo;
+}
+
+.input1 {
+    height: 20px;
+    width: 120px;
+    background-color: gray;
+    grid-area: input1;
+}
+
+.input2 {
+    height: 20px;
+    width: 150px;
+    background-color: rgb(180, 180, 180);
+    grid-area: input2;
+}
