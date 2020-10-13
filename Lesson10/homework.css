@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    height: 350px;
+    width: 350px;
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.yellow {
+    background-color: #f5db3e;
+    left: 50px;
+    top: 50px;
+    z-index: 3;
+}
+
+.coral {
+    background-color: #f87154;
+    left: 100px;
+    top: 100px;
+    z-index: 2;
+}
+
+.green {
+    background-color: #07b862;
+    left: 150px;
+    top: 150px;
+    z-index: 1;
+}
+
+.blue {
+    background-color: #3838c1;
+    left: 200px;
+    top: 200px;
+}
+
+.yellow,
+.coral,
+.green,
+.blue {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    box-shadow: 0px 11px #0000001a;
+}
