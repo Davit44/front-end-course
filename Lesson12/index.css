@@ -17,21 +17,7 @@ body {
     align-items: center;
     display: flex; 
 }
-
-@media (min-width: 700px) and (max-width: 800px) {
-    .container {
-        width: 100vw;
-        background-color: khaki;
-    }
-}
-
-@media (min-width: 600px) and (max-width: 700px) {
-    .box1 {
-        display: none;
-    }
-}
-
-
+/* @media  */
 .box1 {
     background-color: rgb(253, 107, 107);
     width: 120px;
@@ -58,8 +44,7 @@ body {
     background-color: rgb(93, 216, 93);
     width: 120px;
     height: 120px;
-    animation-name: box3;  
+    animation-name:box3;  
     animation-duration: 2s; 
     animation: box3 2s ease 0.3s infinite;
 }
-

@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    --box-size: 100px;
+  }
+  body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+  }
+  .container {
+    width: min-content;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(var(--box-size) / 2);
+    background-color: black;
+    padding: 60px;
+    padding-right: calc(60px + var(--box-size) / 2);
+  }
+  .box {
+    width: var(--box-size);
+    height: var(--box-size);
+    position: relative;
+    margin-top: calc(var(--top) * var(--box-size) / 2)
+  }
+  .violet {
+    background-color: violet;
+  }
+  .red {
+    background-color: red;
+  }
+  .blue {
+    background-color: blue;
+  }
+  .green {
+    background-color: green;
+  }
+  .yellow {
+    background-color: yellow;
+  }
