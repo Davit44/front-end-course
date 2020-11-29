@@ -168,5 +168,49 @@ for (let row = 1 ; row <= rowQuantity ; row++ ) {
 }
     document.write('<br>');
 }
+// Burgi Gogii tarberaky
 
+// 1     *
+// 2   * * *
+// 3 * * * * *
+// 2 * rowCount - 2 (i - 1) * 2
+// *
+// * * *
+// * * * * *
+const rowCount = 3;
+for (let i = 1; i <= rowCount; i++) { // մեծ ցիկլ տողերը փոելու համար
+  for (let j = 1; j <= 2 * (rowCount - i); j++) { // ցիկլ տողի դիմացի բացատների համար
+    document.write(" ");
+  }
+  for (let j = 1; j <= 2 * i - 1; j++) { // ցիկլ աստղանիշների համար
+    document.write("*");
+  }
+  document.write("<br />");
+}
 
+//////////////////////////////////////////
+//Gogii tarberaknery 
+
+// Tvi amboxj masy vercnelu hamar (bitayin kam enq anum 0-i het)
+// let x = 45.4;
+// console.log(x | 0);
+////////////////////////////////
+// let num = prompt();
+// const numCount = num.length;
+//////////////////////////////////////
+// let num = 45678932;
+// let count = 0;
+// while (num > 0) {
+//   count++;
+//   num /= 10;
+//   num |= 0;
+// }
+// console.log(count);
+// let num = 456789156.412345;
+// let sum = 0;
+// while (num > 0) {
+//   sum += num % 10;
+//   num /= 10;
+//   num |= 0;
+// }
+// console.log(sum);
