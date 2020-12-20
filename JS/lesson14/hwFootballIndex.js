@@ -1,6 +1,6 @@
 // buttons
-const btnScore = document.getElementById("score");
-const btnAccept = document.getElementById("accept");
+const btnScore = document.getElementById("scoreFirst");
+const btnAccept = document.getElementById("acceptFirst");
 const btnReset = document.getElementById("reset");
 
 // texts
@@ -71,10 +71,10 @@ team.init();
 // example
 // const progress = document.getElementById("progress");
 
-let id2 = setInterval(() => {
-  if (progress.value >= 100) {
-    clearInterval(id2);
-    return;
-  }
-  progress.value += 0.1;
-}, 10);
+// let id2 = setInterval(() => {
+//   if (progress.value >= 100) {
+//     clearInterval(id2);
+//     return;
+//   }
+//   progress.value += 0.1;
+// }, 10);
