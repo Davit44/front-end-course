@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >
+        let arr = [
+    {
+      title: "The Road Ahead",
+      author: "Bill Gates",
+      date: 2009,
+    },
+    {
+      title: "Walter Isaacson",
+      author: "Steve Jobs",
+      date: 2015,
+    },
+    {
+      title: "Mockingjay: The Final Book of The Hunger Games",
+      author: "Suzanne Collins",
+      date: 2007,
+    },
+  ];
+
+
+for(let i = 0; i < (arr.length - 1); i++){
+    // for (let key in arr[i]) {
+        if (arr[i].date > arr[i + 1].date) {
+            temp = arr[i + 1];
+            arr[i + 1] = arr[i];
+            arr[i] = temp;
+        // }
+    }
+
+}
+console.log(arr);
+    </script>
+</body>
+</html>

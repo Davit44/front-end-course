@@ -133,36 +133,36 @@ console.log(arr);
 ///////////////////////////////////////////////////////////////
 
 //6․Սորտավորել հետևյալ զանգվածը ըստ տարեթվերի աճման՝
-
+// Լուծված չի
 // let temp;
 
-// let arr = [
-//     {
-//       title: "The Road Ahead",
-//       author: "Bill Gates",
-//       date: 2009,
-//     },
-//     {
-//       title: "Walter Isaacson",
-//       author: "Steve Jobs",
-//       date: 2015,
-//     },
-//     {
-//       title: "Mockingjay: The Final Book of The Hunger Games",
-//       author: "Suzanne Collins",
-//       date: 2007,
-//     },
-//   ];
+let arr = [
+    {
+      title: "The Road Ahead",
+      author: "Bill Gates",
+      date: 2009,
+    },
+    {
+      title: "Walter Isaacson",
+      author: "Steve Jobs",
+      date: 2015,
+    },
+    {
+      title: "Mockingjay: The Final Book of The Hunger Games",
+      author: "Suzanne Collins",
+      date: 2007,
+    },
+  ];
 
 
-// for(let i = 0; i < arr.length; i++){
-//     for (let key in arr[i]) {
-//         if (arr[i][date] > arr[i + 1][date]) {
-//             temp = arr[i + 1];
-//             arr[i + 1] = arr[i];
-//             arr[i] = temp;
-//         }
-//     }
+for(let i = 0; i < arr.length; i++){
+    for (let key in arr[i]) {
+        if (arr[i][date] > arr[i + 1][date]) {
+            temp = arr[i + 1];
+            arr[i + 1] = arr[i];
+            arr[i] = temp;
+        }
+    }
 
-// }
-// console.log(arr);
+}
+console.log(arr);
