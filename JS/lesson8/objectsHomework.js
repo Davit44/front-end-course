@@ -49,7 +49,15 @@ let obj = {
     arr.push(obj[key]);
 }
 
-console.log(arr)
+console.log(arr);
+
+//xndir 2 by Gogi
+
+let arr = [];
+for(let key in obj){
+    arr.push([key, obj[key]])
+}
+
 
 ///////////////////////////////////////////////////////////////
 
@@ -70,6 +78,16 @@ for(let key in home) {
 if(count === 0){
 console.log('The object is empty');
 } else console.log('The object is filled');
+
+// xndir 3 by Gogi
+let home = {
+}
+let isEmpty = true;
+for(let key in home) {
+    isEmpty = false;
+    break;
+}
+if(isEmpty) console.log("empty")
 
 
 ///////////////////////////////////////////////////////////////
@@ -130,12 +148,52 @@ do {
 } while(swapped);
 console.log(arr);
 
+//Variant by Gogi
+
+let arr = [2010, 2008, 2007 ];
+for(let j = 0; j < arr.length - 1; j++){
+    let flag = true;
+    for(let i = 0; i < arr.length - 1 - j; i++){
+        if(arr[i] > arr[i + 1]){
+            let temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+            // swap
+            flag = false;
+        }
+    }
+    if( flag ) break;
+
+
 ///////////////////////////////////////////////////////////////
 
 //6․Սորտավորել հետևյալ զանգվածը ըստ տարեթվերի աճման՝
 // Լուծված չի
 // let temp;
 
+<<<<<<< HEAD
+=======
+// let arr = [
+//     {
+//       title: "The Road Ahead",
+//       author: "Bill Gates",
+//       date: 2009,
+//     },
+//     {
+//       title: "Walter Isaacson",
+//       author: "Steve Jobs",
+//       date: 2015,
+//     },
+//     {
+//       title: "Mockingjay: The Final Book of The Hunger Games",
+//       author: "Suzanne Collins",
+//       date: 2007,
+//     },
+//   ];
+
+//by Gogi
+
+>>>>>>> a0ddd162c536fb760e915da2ac94761b959c8ad8
 let arr = [
     {
       title: "The Road Ahead",
@@ -153,6 +211,7 @@ let arr = [
       date: 2007,
     },
   ];
+<<<<<<< HEAD
 
 
 for(let i = 0; i < arr.length; i++){
@@ -166,3 +225,18 @@ for(let i = 0; i < arr.length; i++){
 
 }
 console.log(arr);
+=======
+  for(let j = 0; j < arr.length - 1; j++){
+      let flag = true;
+      for(let i = 0; i < arr.length - 1 - j; i++){
+          if(arr[i].date > arr[i + 1].date){
+              let temp = arr[i];
+              arr[i] = arr[i + 1];
+              arr[i + 1] = temp;
+              // swap
+              flag = false;
+          }
+      }
+      if( flag ) break;
+  }
+>>>>>>> a0ddd162c536fb760e915da2ac94761b959c8ad8
