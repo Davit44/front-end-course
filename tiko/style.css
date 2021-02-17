@@ -1,0 +1,106 @@
+* {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+.scoring {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.accepting {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+#score,
+#accept,
+#reset {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 99vh;
+  background-image: url(/img/1637809.jpg);
+  background-size: cover;
+}
+.btns {
+  padding-right: 30px;
+  display: grid;
+  grid-gap: 10px;
+}
+.btns1 {
+  display: grid;
+  grid-gap: 10px;
+  padding-left: 30px;
+}
+
+#score1,
+#accept1,
+#reset1 {
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.scoring1,
+.accepting1 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.text-all {
+  margin-right: 30px;
+}
+button {
+  background: none;
+  width: 240px;
+  color: #0cd5dd;
+  height: 40px;
+  border: 3px solid #17d7dd;
+  font-size: 18px;
+  border-radius: 6px;
+  transition: 0.6s;
+  overflow: hidden;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background: #d66262;
+  cursor: pointer;
+}
+.text {
+  color: #20faf9;
+  font-size: 50px;
+  position: absolute;
+  transform: translate(50px, -150px);
+  font-weight: bold;
+  display: inline-block;
+}
+
+#progress {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+}
+
+#p {
+  position: absolute;
+  transform: translateY(-367px);
+  font-size: 50px;
+  color: #20faf9;
+}
+
+.text-all {
+  color: #20faf9;
+}
+.text-all1 {
+  color: #c01111;
+}

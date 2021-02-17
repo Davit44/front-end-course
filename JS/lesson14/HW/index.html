@@ -4,38 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Game Statistics</h1>
-    <div id="first-team">
-      <h2 id="juventus">Juventus</h2>
-      <div><span>Scored goals</span><span id="scored-text1">0</span></div>
-      <div><span>Accepted goals</span><span id="accepted-text1">0</span></div>
+    
+    <div id="container">
+      <h1>Game Statistics</h1>
+      <div id="first-team">
+        <h2 id="juventus">Juventus</h2>
+        <div class="text1">
+          <div><span>Scored goals</span><span id="scored-text1">0</span></div>
+          <div>
+            <span>Accepted goals</span><span id="accepted-text1">0</span>
+          </div>
+          <div><span>Red Card</span><span id="red-card-team1">0</span></div>
+          <div><span>Players on Pitch</span><span id="players1">11</span></div>
+        </div>
+        <div class="buttons1">
+          <button id="scoreFirst">First team scored</button>
+          <button id="acceptFirst">First team accept</button>
+          <button id="redFirst">Red Card FT</button>
+        </div>
+      </div>
+      <div id="second-team">
+        <h2 id="milan">Milan</h2>
+        <div class="text2">
+          <div><span>Scored goals</span><span id="scored-text2">0</span></div>
+          <div>
+            <span>Accepted goals</span><span id="accepted-text2">0</span>
+          </div>
+          <div><span>Red Card</span><span id="red-card-team2">0</span></div>
+          <div><span>Players on Pitch</span><span id="players2">11</span></div>
+        </div>
+        <div class="buttons2">
+          <button id="scoreSecond">Second team scored</button>
+          <button id="acceptSecond">Second team accept</button>
 
-      <div><span>Red Card</span><span id="red-card-team1">0</span></div>
-      <div><span>Players on Pitch</span><span id="players1">11</span></div>
+          <button id="redSecond">Red Card ST</button>
+        </div>
+      </div>
 
-
-      <button id="scoreFirst">First team scored</button>
-      <button id="acceptFirst">First team accept</button>
-
-      <button id="redFirst">Red Card FT</button>
+      <button id="reset">Reset</button>
     </div>
-    <div id="second-team">
-      <h2 id="milan">Milan</h2>
-      <div><span>Scored goals</span><span id="scored-text2">0</span></div>
-      <div><span>Accepted goals</span><span id="accepted-text2">0</span></div>
-
-      <div><span>Red Card</span><span id="red-card-team2">0</span></div>
-      <div><span>Players on Pitch</span><span id="players2">11</span></div>
-
-      <button id="scoreSecond">Second team scored</button>
-      <button id="acceptSecond">Second team accept</button>
-
-      <button id="redSecond">Red Card ST</button>
-    </div>
-
-    <button id="reset">Reset</button>
 
     <script src="index.js"></script>
   </body>

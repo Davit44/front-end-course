@@ -79,7 +79,7 @@ const team = {
     this.teamFirst.texts.accept.innerText = this.teamFirst.goals.accepted;
   },
 
-  redCardCountFirst () {
+  redCardCountFirst() {
     this.teamFirst.disqualified++;
     this.teamFirst.players--;
     // function technicalDefeat () {
@@ -87,13 +87,13 @@ const team = {
     //     return this.teamFirst.players--;
     //     } else  {
     //         return "Second Team Win"
-    //     }  
-    // }; 
+    //     }
+    // };
     this.teamFirst.texts.red.innerText = this.teamFirst.disqualified;
     this.teamFirst.texts.players.innerText = this.teamFirst.players;
   },
 
-  redCardCountSecond () {
+  redCardCountSecond() {
     this.teamSecond.disqualified++;
     this.teamSecond.players--;
     this.teamSecond.texts.red.innerText = this.teamSecond.disqualified;
@@ -109,7 +109,6 @@ const team = {
     this.teamFirst.players = 11;
     this.teamSecond.disqualified = 0;
     this.teamSecond.players = 11;
-
 
     this.teamFirst.texts.score.innerText = 0;
     this.teamFirst.texts.accept.innerText = 0;
@@ -129,8 +128,6 @@ const team = {
 
     this.teamFirst.btns.red.onclick = () => this.redCardCountFirst();
     this.teamSecond.btns.red.onclick = () => this.redCardCountSecond();
-
-
 
     this.btns.onclick = () => this.resetGoals();
   },
