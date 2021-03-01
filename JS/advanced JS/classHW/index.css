@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic%7CComfortaa:400,700&subset=latin,cyrillic);
+body {
+    inset: 0;
+    position: absolute;
+    background-color: white;
+    transition: background 0.5s ease;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    color: white;
+}
+.dark-mode {
+    background-color: #353434;
+}
+.btn {
+    font-weight: bolder;
+    border-radius: 20px;
+    font-family: 'Comfortaa', cursive;
+    transform: translate(420px, 200px);
+    margin: 5px 0px 5px;
+}
+.btn-promotion {
+    background-image: repeating-radial-gradient(10px 10px at var(--x, 50%) var(--y, 50%),
+            blue,
+            transparent);
+}
+.btn-brand {
+    background-image: radial-gradient(10px 10px at var(--x, -10px) var(--y, -10px),
+            rgb(0, 255, 51),
+            transparent);
+}
+.btn-tertiary {
+    background: #44aa07;
+}
+.btn-primary {
+    background: #077faa;
+}
+.btn-secondary {
+    background: #b0dded2a;
+}
