@@ -1,0 +1,41 @@
+body{
+    color: white;
+    font-weight: 300;
+}
+.container{
+    background: linear-gradient(15deg, rgba(2,0,36,1) 0%, rgba(241,117,236,1) 45%, rgba(0,212,255,1) 86%);
+    border-radius: 5px;
+    display: inline-block;
+    transform: translate(199%, 180%);
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    width: 400px;
+  
+}
+.first-number {
+    margin: 30px 0px 10px 0px;
+    position: relative;
+}
+.btn__container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.mult,
+.divide {
+    margin-right: 10px;
+    border-radius: 10px;
+    background: linear-gradient(15deg, rgba(2,0,36,1) 0%, rgba(241,117,236,1) 45%, rgba(0,212,255,1) 86%);
+    
+}
+
+.input__first,
+.input__second {
+    border: none;
+    border-bottom: 2px solid #bf5dc2;
+    background: none;
+}
+.input__second {
+    border-bottom: 2px solid #00d4ff;;
+}
